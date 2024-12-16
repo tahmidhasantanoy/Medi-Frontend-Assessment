@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <div className="container .flex flex-col lg:flex-row items-center justify-between px-4 py-6 lg:py-3">
+    <div className="container .flex flex-col lg:flex-row items-center justify-between px-4 py-6 sm:py-6 lg:py-3">
       {/* Navbar Fixed Section */}
       <div className="flex items-center justify-between text-white text-xl fixed w-full top-0 z-50 px-5 bg-white">
         {/* Navbar Start */}
@@ -91,9 +91,9 @@ const Header = () => {
               <FaHistory className="text-black" />
               <p className="text-black">Recent</p>
             </div>
-            <div className="flex items-center space-x-1 border border-black rounded-3xl p-2">
-              <FaRegEdit className="text-black" />
-              <p className="text-black">Draft</p>
+            <div className="flex items-center space-x-1 border border-yellow-500 rounded-3xl p-2">
+              <FaRegEdit className="text-yellow-500" />
+              <p className="text-yellow-500">Draft</p>
             </div>
             <div className="flex items-center space-x-1 border border-black rounded-3xl p-2">
               <TbArrowBack className="text-black" />
@@ -130,7 +130,7 @@ const Header = () => {
             <p>Cart</p>
           </div>
         </div>
-        <div className="flex items-center sm:space-x-4">
+        <div className="flex items-center sm:space-x-4 ">
           <p>Draft</p>
           <p>Menu</p>
         </div>

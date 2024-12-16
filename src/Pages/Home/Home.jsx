@@ -10,6 +10,7 @@ import star from "../../../public/images/fb.png";
 import starBlank from "../../../public/images/fb.png";
 import Sidebar from "../../Exotic/Sidebar";
 import SideBarItems from "../../Exotic/SideBarItems";
+import Table from "../../Components/Table/Table";
 
 const Home = () => {
   return (
@@ -47,68 +48,12 @@ const Home = () => {
                     {/* Middle - Text */}
                     <div className="lg:w-[92%] bg-white p-2 lg:p-6 rounded-lg">
                       <Outlet />
-                      <div className="flex flex-col ml-2 lg:ml-1">
-                        <p className="font-semibold lg:text-lg">
-                          Was This Helpful?
-                        </p>
-                        <div className="flex items-center space-x-2 space-y-1">
-                          <img
-                            className="w-6 lg:w-7 h-6 lg:h-7"
-                            src={star}
-                            alt="review"
-                          />
-                          <img
-                            className="w-6 lg:w-7 h-6 lg:h-7"
-                            src={star}
-                            alt="review"
-                          />
-                          <img
-                            className="w-6 lg:w-7 h-6 lg:h-7"
-                            src={star}
-                            alt="review"
-                          />
-                          <img
-                            className="w-6 lg:w-7 h-6 lg:h-7"
-                            src={star}
-                            alt="review"
-                          />
-                          <img
-                            className="w-5 lg:w-6 h-5 lg:h-6"
-                            src={starBlank}
-                            alt="review"
-                          />
-                        </div>
-                      </div>
-                      <div className="visible sm:visible lg:hidden .mt-6 ml-2">
-                        <div className="flex items-center space-x-3 ">
-                          <img
-                            className="w-8 h-8 bg-blue-500 text-white rounded-full p-2"
-                            src={icon1}
-                            alt="icons"
-                          />
-                          <img
-                            className="w-8 h-8 bg-blue-800 text-white rounded-full p-1"
-                            src={icon2}
-                            alt="icons"
-                          />
-                          <img
-                            className="w-8 h-8 bg-blue-500 rounded-full p-2"
-                            src={icon3}
-                            alt="icons"
-                          />
-                          <img
-                            className="w-7 h-7 bg-red-700 text-white rounded-full p-2"
-                            src={icon4}
-                            alt="icons"
-                          />
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </main>
                 {/* Right Area */}
                 <div className="w-1/2">
-                  <h2 className="text-6xl">Right area</h2>
+                  <Table />
                 </div>
               </div>
             </div>

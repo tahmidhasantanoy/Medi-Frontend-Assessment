@@ -3,7 +3,8 @@ import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Medicine from "../Pages/Medicine/Medicine";
 import HomeCopy from "../Pages/Home/HomeCopy";
-import Medicine1 from "../Pages/medicine1/medicine1";
+import Medicine1 from "../Pages/Medicines/medicine1";
+import Medicine2 from "../Pages/Medicines/Medicine2";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "medicine1",
         element: <Medicine1 />,
+      },
+      {
+        path: "medicine2",
+        element: <Medicine2 />,
       },
     ],
   },
