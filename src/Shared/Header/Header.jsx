@@ -1,9 +1,5 @@
-import { CiLight } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
-import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { Link } from "react-router-dom";
-// import logo from "../../../public/images/logo.png";
 import { useEffect, useState } from "react";
 import { FaHistory, FaKeyboard, FaRegEdit } from "react-icons/fa";
 import { HiDocumentReport } from "react-icons/hi";
@@ -36,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <div className="containerflex flex-col lg:flex-row items-center justify-between px-4 py-6">
+    <div className="container .flex flex-col lg:flex-row items-center justify-between px-4 py-6 lg:py-3">
       {/* Navbar Fixed Section */}
       <div className="flex items-center justify-between text-white text-xl fixed w-full top-0 z-50 px-5 bg-white">
         {/* Navbar Start */}
