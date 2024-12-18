@@ -2,13 +2,7 @@ import Container from "../../UI/Container";
 import { Outlet } from "react-router-dom";
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
-import icon1 from "../../../public/images/fb.png";
-import icon2 from "../../../public/images/fb.png";
-import icon3 from "../../../public/images/fb.png";
-import icon4 from "../../../public/images/fb.png";
-import star from "../../../public/images/fb.png";
-import starBlank from "../../../public/images/fb.png";
-import Sidebar from "../../Exotic/Sidebar";
+
 import SideBarItems from "../../Exotic/SideBarItems";
 import Table from "../../Components/Table/Table";
 
