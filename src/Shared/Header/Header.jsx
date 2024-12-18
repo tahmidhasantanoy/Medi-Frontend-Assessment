@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <div className="container .flex flex-col lg:flex-row items-center justify-between px-4 py-6 sm:py-6 lg:py-3">
+    <div className="container px-4 py-6 sm:py-6 lg:py-3">
       {/* Navbar Fixed Section */}
       <div className="flex items-center justify-between text-white text-xl fixed w-full top-0 z-50 px-5 bg-white">
         {/* Navbar Start */}
@@ -122,7 +122,7 @@ const Header = () => {
       </div>
 
       {/* Mobile View */}
-      <div className="flex  justify-between items-centersm:space-x-4 lg:hidden">
+      <div className="flex  justify-between items-center sm:space-x-4 lg:hidden">
         <div className="flex space-x-4">
           <IoMdMenu className="w-6 h-6" />
           <div className="flex items-center sm:space-x-4">

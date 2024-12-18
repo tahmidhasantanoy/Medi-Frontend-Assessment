@@ -22,20 +22,22 @@ const Medicine1 = () => {
                 <main className="lg:w-1/2 bg-white">
                   {/* Section 1 */}
                   {/* Search field */}
-                  <div className=" lg:flex flex-1 mx-4 relative my-2 lg:my-5">
-                    <IoSearchOutline className="absolute left-[12px] top-[10px] my-auto" />
-                    <div className="w-[100%] flex items-center space-x-2 border border-gray-300 rounded-lg px-4 py-2 bg-white">
-                      <input
-                        type="text"
-                        placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search by product name, generic or bar code no"
-                        className="outline-none w-full text-sm text-gray-700 bg-transparent"
-                      />
+                  <div className="fixed  top-20 w-[48%]">
+                    <div className=" lg:flex flex-1 mx-4 relative my-2 lg:my-5">
+                      <IoSearchOutline className="absolute left-[12px] top-[10px] my-auto" />
+                      <div className="w-[100%] flex items-center space-x-2 border border-gray-300 rounded-lg px-4 py-2 bg-white">
+                        <input
+                          type="text"
+                          placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search by product name, generic or bar code no"
+                          className="outline-none w-full text-sm text-gray-700 bg-transparent"
+                        />
+                      </div>
                     </div>
                   </div>
                   {/* Search field */}
-
+                  {/* Space -- */}
                   <hr className="w-full" />
-                  <div className="bg-white shadow-md p-2 lg:p-2 rounded-lg flex flex-col lg:flex-row">
+                  <div className="bg-white shadow-md p-2 lg:p-2 rounded-lg flex flex-col lg:flex-row mt-12">
                     {/* Left - Social Icons */}
 
                     <div className="hidden sm:hidden lg:flex lg:flex-col lg:w-[30%] space-y-3">
@@ -55,120 +57,138 @@ const Medicine1 = () => {
                           <MdOutlineKeyboardArrowDown />
                         </div>
                       </div>
-                      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <div className="border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <p className="text-red-500 text-xs">Out of stock</p>
-                          </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
-                          </div>
-                          <p className="font-semibold ">TK.180</p>
-                        </div>
-                        <div className="relative border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <div className="flex flex-col">
-                              <p className="text-black text-xs">In stock</p>
-                              <p className="text-green-500 text-xs">150</p>
+
+                      {/* Scoralable */}
+                      <div className="overflow-y-scroll h-[400px] ">
+                        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                          <div className="border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <p className="text-red-500 text-xs">
+                                Out of stock
+                              </p>
                             </div>
-                          </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
-                          </div>
-                          <p className="font-semibold ">TK.180</p>
-                          <span className="absolute bottom-3 right-3 bg-red-400 text-white rounded-3xl px-2 p-[1px]">
-                            3
-                          </span>
-                        </div>
-                        <div className="relative border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <div className="flex flex-col">
-                              <p className="text-black text-xs">In stock</p>
-                              <p className="text-green-500 text-xs">150</p>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
                             </div>
+                            <p className="font-semibold ">TK.180</p>
                           </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
+                          <div className="relative border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <div className="flex flex-col">
+                                <p className="text-black text-xs">In stock</p>
+                                <p className="text-green-500 text-xs">150</p>
+                              </div>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
+                            <span className="absolute bottom-3 right-3 bg-red-400 text-white rounded-3xl px-2 p-[1px]">
+                              3
+                            </span>
                           </div>
-                          <p className="font-semibold ">TK.180</p>
-                          <span className="absolute bottom-3 right-3 bg-red-400 text-white rounded-3xl px-2 p-[1px]">
-                            1
-                          </span>
-                        </div>
-                        <div className="border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <p className="text-red-500 text-xs">Out of stock</p>
+                          <div className="relative border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <div className="flex flex-col">
+                                <p className="text-black text-xs">In stock</p>
+                                <p className="text-green-500 text-xs">150</p>
+                              </div>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
+                            <span className="absolute bottom-3 right-3 bg-red-400 text-white rounded-3xl px-2 p-[1px]">
+                              1
+                            </span>
                           </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
+                          <div className="border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <p className="text-red-500 text-xs">
+                                Out of stock
+                              </p>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
                           </div>
-                          <p className="font-semibold ">TK.180</p>
-                        </div>
-                        <div className="border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <p className="text-red-500 text-xs">Out of stock</p>
+                          <div className="border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <p className="text-red-500 text-xs">
+                                Out of stock
+                              </p>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
                           </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
+                          <div className="border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <p className="text-red-500 text-xs">
+                                Out of stock
+                              </p>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
                           </div>
-                          <p className="font-semibold ">TK.180</p>
-                        </div>
-                        <div className="border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <p className="text-red-500 text-xs">Out of stock</p>
+                          <div className="border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <p className="text-red-500 text-xs">
+                                Out of stock
+                              </p>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
                           </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
+                          <div className="border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <p className="text-red-500 text-xs">
+                                Out of stock
+                              </p>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
                           </div>
-                          <p className="font-semibold ">TK.180</p>
-                        </div>
-                        <div className="border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <p className="text-red-500 text-xs">Out of stock</p>
+                          <div className="border border-gray-300 rounded-lg px-4 py-2">
+                            <div className="flex space-x-3">
+                              <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
+                              <p className="text-red-500 text-xs">
+                                Out of stock
+                              </p>
+                            </div>
+                            <div className="my-3">
+                              <p>Paracetamol</p>
+                              <p>500mg</p>
+                            </div>
+                            <p className="font-semibold ">TK.180</p>
                           </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
-                          </div>
-                          <p className="font-semibold ">TK.180</p>
-                        </div>
-                        <div className="border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <p className="text-red-500 text-xs">Out of stock</p>
-                          </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
-                          </div>
-                          <p className="font-semibold ">TK.180</p>
-                        </div>
-                        <div className="border border-gray-300 rounded-lg px-4 py-2">
-                          <div className="flex space-x-3">
-                            <AiOutlineMedicineBox className="w-10 h-10 border border-gray-300 rounded-full p-2" />
-                            <p className="text-red-500 text-xs">Out of stock</p>
-                          </div>
-                          <div className="my-3">
-                            <p>Paracetamol</p>
-                            <p>500mg</p>
-                          </div>
-                          <p className="font-semibold ">TK.180</p>
                         </div>
                       </div>
-                      
+                      {/* Scoralable */}
                     </div>
                   </div>
                 </main>
@@ -180,7 +200,11 @@ const Medicine1 = () => {
             </div>
           </div>
         </div>
-        <FooterMenu />
+        {/* Let's fixed it */}
+        <div className="fixed bottom-0 w-full">
+          <FooterMenu />
+        </div>
+        {/* Let's fixed it */}
       </div>
     </Container>
   );
